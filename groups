@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-2da882fb536ce4fab61a3af8b2befc1daf535044       	puppet-vcsrepo-distgit-core
-769a50848b81da4fbd3e2eb1fe4066727e402115        	puppet-vcsrepo-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+2da882fb536ce4fab61a3af8b2befc1daf535044	puppet-vcsrepo-distgit-core
+769a50848b81da4fbd3e2eb1fe4066727e402115	puppet/puppet-vcsrepo-distgit-ptl
+global:Registered-Users                 	Registered Users
