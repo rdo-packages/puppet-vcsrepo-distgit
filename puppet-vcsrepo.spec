@@ -7,8 +7,8 @@
 
 
 Name:           puppet-vcsrepo
-Version:        XXX
-Release:        XXX
+Version:        1.4.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Puppet module providing a type to manage repositories from various version control systems
 License:        GPLv2
 
@@ -48,4 +48,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vcsrepo/
 
 
 %changelog
+* Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 1.4.0-1.cd6c3bc.git
+- Newton update 1.4.0 (cd6c3bc87e59bd51191c08515a7807071b3bb7a3)
+
 
