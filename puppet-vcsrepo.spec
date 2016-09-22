@@ -5,6 +5,11 @@
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
+%global commit cd6c3bc87e59bd51191c08515a7807071b3bb7a3
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:           puppet-vcsrepo
 Version:        XXX
