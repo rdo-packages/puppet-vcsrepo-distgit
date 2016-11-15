@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-vcsrepo
-%global commit cd6c3bc87e59bd51191c08515a7807071b3bb7a3
+%global commit 6c88fb38e7710d68d9c41961a45db2b841b86e2f
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -8,7 +8,7 @@
 
 Name:           puppet-vcsrepo
 Version:        1.4.0
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?alphatag}%{?dist}
 Summary:        Puppet module providing a type to manage repositories from various version control systems
 License:        GPLv2
 
@@ -48,6 +48,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vcsrepo/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 1.4.0-2.6c88fb3.git
+- Newton update 1.4.0 (6c88fb38e7710d68d9c41961a45db2b841b86e2f)
+
 * Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 1.4.0-1.cd6c3bc.git
 - Newton update 1.4.0 (cd6c3bc87e59bd51191c08515a7807071b3bb7a3)
 
