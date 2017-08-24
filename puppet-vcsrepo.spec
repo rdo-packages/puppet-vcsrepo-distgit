@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-vcsrepo
-%global commit cd6c3bc87e59bd51191c08515a7807071b3bb7a3
+%global commit e3d28c6f7aa3b1daf7e9d30b55494592a65a2264
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-vcsrepo
-Version:        XXX
-Release:        XXX
+Version:        2.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Puppet module providing a type to manage repositories from various version control systems
 License:        GPLv2
 
@@ -48,5 +48,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vcsrepo/
 
 
 %changelog
+* Thu Aug 24 2017 Alfredo Moralejo <amoralej@redhat.com> 2.0.0-1.e3d28c6git
+- Pike update 2.0.0 (e3d28c6f7aa3b1daf7e9d30b55494592a65a2264)
 
 
