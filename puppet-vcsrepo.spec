@@ -52,4 +52,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vcsrepo/
 - Update to post 3.0.0 (b06d5d378e80d03c5dea40a89e83449191064ddc)
 
 
-
