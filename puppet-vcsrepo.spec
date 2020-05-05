@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-vcsrepo
-%global commit cd6c3bc87e59bd51191c08515a7807071b3bb7a3
+%global commit d2855924c7219a8407a9e81ad1ef2df60bd9f162
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-vcsrepo
-Version:        XXX
-Release:        XXX
+Version:        3.1.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Puppet module providing a type to manage repositories from various version control systems
 License:        GPLv2
 
@@ -48,5 +48,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vcsrepo/
 
 
 %changelog
+* Tue May 05 2020 RDO <dev@lists.rdoproject.org> 3.1.0-1.d285592git
+- Update to post 3.1.0 (d2855924c7219a8407a9e81ad1ef2df60bd9f162)
+
 
 
