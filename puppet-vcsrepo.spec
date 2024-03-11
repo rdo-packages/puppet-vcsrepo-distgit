@@ -1,10 +1,5 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppetlabs-vcsrepo
-%global commit cd6c3bc87e59bd51191c08515a7807071b3bb7a3
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
-
 
 Name:           puppet-vcsrepo
 Version:        XXX
@@ -14,7 +9,7 @@ License:        GPLv2
 
 URL:            https://github.com/puppetlabs/puppetlabs-vcsrepo
 
-Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/puppetlabs/%{upstream_name}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
