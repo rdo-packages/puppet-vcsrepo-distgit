@@ -2,8 +2,8 @@
 %define upstream_name puppetlabs-vcsrepo
 
 Name:           puppet-vcsrepo
-Version:        XXX
-Release:        XXX
+Version:        7.0.0
+Release:        1%{?dist}
 Summary:        Puppet module providing a type to manage repositories from various version control systems
 License:        GPLv2
 
@@ -43,5 +43,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/vcsrepo/
 
 
 %changelog
+* Tue Mar 18 2025 RDO <dev@lists.rdoproject.org> 7.0.0-1
+- Update to 7.0.0
+
 
 
